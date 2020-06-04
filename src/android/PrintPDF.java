@@ -305,7 +305,7 @@ public class PrintPDF extends CordovaPlugin {
         Intent intent = new Intent(
                 cordova.getActivity(), CloudPrintDialog.class);
 
-        intent.setType("application/pdf");
+        intent.setType("image/png");
         intent.putExtra(Intent.EXTRA_TITLE, title);
         intent.putExtra(Intent.EXTRA_TEXT, filePath);
 
